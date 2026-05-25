@@ -1,0 +1,6 @@
+/* App-level styles – globals are in ./styles/globals.css */
+
+@keyframes spin-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}

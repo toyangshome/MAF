@@ -1,0 +1,246 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   MAF UI — Design System Tokens
+   Maps Radix Themes 1-12 scale to standard 50-950 scale.
+   Both scales available as CSS custom properties.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Color Mapping: Radix 1-12 → 50-950 ──
+     Step 1  = 50   (lightest)
+     Step 2  = 100
+     Step 3  = 200
+     Step 4  = 300
+     Step 5  = 400
+     Step 6  = 500
+     Step 7  = 600
+     Step 8  = 700
+     Step 9  = 800  (base)
+     Step 10 = 850
+     Step 11 = 900
+     Step 12 = 950  (darkest)
+  */
+
+  /* Gray — 50-950 scale */
+  --gray-50:  var(--gray-1);
+  --gray-100: var(--gray-2);
+  --gray-200: var(--gray-3);
+  --gray-300: var(--gray-4);
+  --gray-400: var(--gray-5);
+  --gray-500: var(--gray-6);
+  --gray-600: var(--gray-7);
+  --gray-700: var(--gray-8);
+  --gray-800: var(--gray-9);
+  --gray-850: var(--gray-10);
+  --gray-900: var(--gray-11);
+  --gray-950: var(--gray-12);
+
+  /* Accent — 50-950 scale */
+  --accent-50:  var(--accent-1);
+  --accent-100: var(--accent-2);
+  --accent-200: var(--accent-3);
+  --accent-300: var(--accent-4);
+  --accent-400: var(--accent-5);
+  --accent-500: var(--accent-6);
+  --accent-600: var(--accent-7);
+  --accent-700: var(--accent-8);
+  --accent-800: var(--accent-9);
+  --accent-850: var(--accent-10);
+  --accent-900: var(--accent-11);
+  --accent-950: var(--accent-12);
+
+  /* Blue — 50-950 scale */
+  --blue-50:  var(--blue-1);
+  --blue-100: var(--blue-2);
+  --blue-200: var(--blue-3);
+  --blue-300: var(--blue-4);
+  --blue-400: var(--blue-5);
+  --blue-500: var(--blue-6);
+  --blue-600: var(--blue-7);
+  --blue-700: var(--blue-8);
+  --blue-800: var(--blue-9);
+  --blue-850: var(--blue-10);
+  --blue-900: var(--blue-11);
+  --blue-950: var(--blue-12);
+
+  /* Green — 50-950 scale */
+  --green-50:  var(--green-1);
+  --green-100: var(--green-2);
+  --green-200: var(--green-3);
+  --green-300: var(--green-4);
+  --green-400: var(--green-5);
+  --green-500: var(--green-6);
+  --green-600: var(--green-7);
+  --green-700: var(--green-8);
+  --green-800: var(--green-9);
+  --green-850: var(--green-10);
+  --green-900: var(--green-11);
+  --green-950: var(--green-12);
+
+  /* Red — 50-950 scale */
+  --red-50:  var(--red-1);
+  --red-100: var(--red-2);
+  --red-200: var(--red-3);
+  --red-300: var(--red-4);
+  --red-400: var(--red-5);
+  --red-500: var(--red-6);
+  --red-600: var(--red-7);
+  --red-700: var(--red-8);
+  --red-800: var(--red-9);
+  --red-850: var(--red-10);
+  --red-900: var(--red-11);
+  --red-950: var(--red-12);
+
+  /* Amber — 50-950 scale */
+  --amber-50:  var(--amber-1);
+  --amber-100: var(--amber-2);
+  --amber-200: var(--amber-3);
+  --amber-300: var(--amber-4);
+  --amber-400: var(--amber-5);
+  --amber-500: var(--amber-6);
+  --amber-600: var(--amber-7);
+  --amber-700: var(--amber-8);
+  --amber-800: var(--amber-9);
+  --amber-850: var(--amber-10);
+  --amber-900: var(--amber-11);
+  --amber-950: var(--amber-12);
+
+  /* Orange — 50-950 scale */
+  --orange-50:  var(--orange-1);
+  --orange-100: var(--orange-2);
+  --orange-200: var(--orange-3);
+  --orange-300: var(--orange-4);
+  --orange-400: var(--orange-5);
+  --orange-500: var(--orange-6);
+  --orange-600: var(--orange-7);
+  --orange-700: var(--orange-8);
+  --orange-800: var(--orange-9);
+  --orange-850: var(--orange-10);
+  --orange-900: var(--orange-11);
+  --orange-950: var(--orange-12);
+
+  /* ── Semantic Tokens ── */
+  --color-bg:           var(--gray-50);
+  --color-bg-subtle:    var(--gray-100);
+  --color-surface:      var(--gray-200);
+  --color-surface-hover: var(--gray-300);
+  --color-border:       var(--gray-500);
+  --color-border-hover: var(--gray-600);
+  --color-text:         var(--gray-950);
+  --color-text-secondary: var(--gray-900);
+  --color-text-muted:   var(--gray-700);
+  --color-text-disabled: var(--gray-600);
+  --color-focus-ring:   var(--accent-800);
+
+  --color-primary:      var(--accent-800);
+  --color-primary-hover: var(--accent-900);
+  --color-primary-text:  #ffffff;
+
+  --color-success:      var(--green-800);
+  --color-success-bg:   var(--green-200);
+  --color-success-text: var(--green-900);
+
+  --color-warning:      var(--amber-800);
+  --color-warning-bg:   var(--amber-200);
+  --color-warning-text: var(--amber-900);
+
+  --color-error:        var(--red-800);
+  --color-error-bg:     var(--red-200);
+  --color-error-text:   var(--red-900);
+
+  --color-info:         var(--blue-800);
+  --color-info-bg:      var(--blue-200);
+  --color-info-text:    var(--blue-900);
+
+  /* ── Spacing (4px grid) ── */
+  --space-0:   0px;
+  --space-px:  1px;
+  --space-0-5: 2px;
+  --space-1:   4px;
+  --space-1-5: 6px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+
+  /* ── Border Radius ── */
+  --radius-none: 0px;
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   10px;
+  --radius-2xl:  12px;
+  --radius-full: 9999px;
+
+  /* ── Typography ── */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --text-xs:   10px;
+  --text-sm:   11px;
+  --text-base: 12px;
+  --text-md:   13px;
+  --text-lg:   15px;
+  --text-xl:   18px;
+  --text-2xl:  22px;
+  --text-3xl:  28px;
+
+  --leading-tight: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.6;
+
+  --weight-normal:   400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal: -0.01em;
+  --tracking-wide:   0.05em;
+
+  /* ── Shadows ── */
+  --shadow-sm:  0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md:  0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg:  0 4px 12px rgba(0, 0, 0, 0.18);
+  --shadow-xl:  0 8px 24px rgba(0, 0, 0, 0.24);
+  --shadow-pop: 0 4px 16px rgba(0, 0, 0, 0.25);
+
+  /* ── Transitions ── */
+  --duration-fast:   100ms;
+  --duration-normal: 150ms;
+  --duration-slow:   200ms;
+  --ease-default:    ease;
+  --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── Z-Index Scale ── */
+  --z-base:    0;
+  --z-dropdown: 10;
+  --z-sticky:  20;
+  --z-overlay: 30;
+  --z-modal:   40;
+  --z-popover: 50;
+  --z-tooltip: 60;
+  --z-toast:   70;
+
+  /* ── Layout ── */
+  --sidebar-width: 240px;
+  --sidebar-collapsed-width: 60px;
+  --header-height: 48px;
+  --content-padding: 24px;
+}
+
+/* ── Status Colors (semantic) ── */
+:root {
+  --status-idle:    var(--gray-700);
+  --status-running: var(--blue-800);
+  --status-done:    var(--green-800);
+  --status-error:   var(--red-800);
+  --status-warning: var(--amber-800);
+}
